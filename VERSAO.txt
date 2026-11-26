@@ -1,0 +1,4 @@
+Entreatos - pacote de documentação
+Base: versão de trabalho 7 recebida no pacote de revisão de acessibilidade.
+Adicionado: README.md com descrição, tecnologias, funcionalidades, execução, testes e limitações.
+Observação: este pacote documenta os recursos encontrados nos arquivos; não representa certificação WCAG nem autenticação real.

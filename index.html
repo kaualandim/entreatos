@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entreatos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <a class="skip-link" href="#conteudoPrincipal">Pular para o conteúdo</a>
+
+    <header>
+        <nav aria-label="Navegação principal">
+            <div class="logo">ENTREATOS</div>
+
+            <div class="menu">
+                <a href="#inicio">Descobrir</a>
+                <a href="#catalogo">Explorar</a>
+                <a href="#minha-lista">Minha Lista</a>
+                <button class="account-open" type="button" id="accountOpen">Entrar</button>
+            </div>
+            <div class="accessibility-tools" aria-label="Ferramentas de acessibilidade">
+                <button type="button" id="themeToggle" aria-pressed="false" aria-label="Ativar modo claro">☀ Modo claro</button>
+                <button type="button" id="fontDecrease" aria-label="Diminuir tamanho da fonte">A−</button>
+                <button type="button" id="fontIncrease" aria-label="Aumentar tamanho da fonte">A+</button>
+                <button type="button" id="contrastToggle" aria-pressed="false">Alto contraste</button>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="conteudoPrincipal">
+
+        <section class="hero" id="inicio">
+            <p class="eyebrow">UMA HISTÓRIA LEVA A OUTRA</p>
+
+            <h1>O QUE VEM<br>DEPOIS?</h1>
+
+            <p class="hero-text">
+                Descubra uma nova história para assistir.
+            </p>
+
+            <button type="button" id="heroDiscoverButton">COMEÇAR A DESCOBRIR</button>
+        </section>
+
+
+
+        <section class="featured-section" aria-labelledby="featuredTitle">
+            <div class="featured-heading">
+                <div>
+                    <p class="section-label">EM DESTAQUE</p>
+                    <h2 id="featuredTitle">Histórias para descobrir.</h2>
+                </div>
+                <div class="carousel-controls">
+                    <button type="button" id="carouselPrev" aria-label="Ver títulos anteriores">&#8592;</button>
+                    <button type="button" id="carouselNext" aria-label="Ver próximos títulos">&#8594;</button>
+                </div>
+            </div>
+            <div class="featured-track" id="featuredTrack" role="region" aria-roledescription="carrossel" aria-label="Produções em destaque"></div>
+        </section>
+
+        <section class="search-section">
+
+            <p class="section-label">JÁ SABE DO QUE GOSTA?</p>
+
+            <h2>Parta de uma história.</h2>
+
+            <div class="search-box">
+                <label class="sr-only" for="quickSearch">Pesquisar filmes, séries e animes</label>
+                <input
+                    id="quickSearch"
+                    type="search"
+                    placeholder="Digite um filme, série ou anime..."
+                >
+                <button type="button" id="quickSearchButton">BUSCAR</button>
+            </div>
+
+        </section>
+
+        <section class="catalog-section" id="catalogo">
+            <p class="section-label">SEU PRÓXIMO UNIVERSO</p>
+            <h2>Explore histórias.</h2>
+            <p class="catalog-intro">Filmes, séries e animes escolhidos para despertar sua curiosidade.</p>
+
+            <div class="catalog-tools">
+                <label class="sr-only" for="catalogSearch">Pesquisar no catálogo</label>
+                <input id="catalogSearch" type="search" placeholder="Buscar título ou gênero...">
+                <label class="sr-only" for="typeFilter">Filtrar por tipo</label>
+                <select id="typeFilter">
+                    <option value="todos">Todos os formatos</option>
+                    <option value="Filme">Filmes</option>
+                    <option value="Série">Séries</option>
+                    <option value="Anime">Animes</option>
+                </select>
+            </div>
+            <p class="catalog-count" id="catalogCount" aria-live="polite"></p>
+            <div class="catalog-grid" id="catalogGrid"></div>
+            <p class="empty-message" id="emptyMessage" hidden>Nenhum título encontrado. Tente outra pesquisa.</p>
+        </section>
+
+        <section class="favorites-section" id="minha-lista">
+            <p class="section-label">GUARDADAS PARA DEPOIS</p>
+            <h2>Minha lista.</h2>
+            <p class="catalog-intro">As histórias que você quer assistir, reunidas em um só lugar.</p>
+            <div class="catalog-grid" id="favoritesGrid"></div>
+            <p class="empty-message" id="favoritesEmpty">Você ainda não salvou nenhum título. Explore o catálogo e toque no coração para guardar uma história.</p>
+        </section>
+
+        <section class="recommendation">
+
+            <p class="section-label">ENCONTRAMOS ALGO PARA VOCÊ</p>
+
+            <div class="recommendation-content">
+
+        <div class="poster">
+    <img src="images/posterinterestelar.webp" alt="Pôster de Interestelar">
+</div>
+                <div class="movie-info">
+
+                    <p class="reason">
+                        PORQUE VOCÊ GOSTOU DE...
+                    </p>
+
+                    <h2>Interestelar</h2>
+
+                    <p class="genres">
+                        Ficção científica · Drama · Aventura
+                    </p>
+
+                    <p class="description">
+                        Uma nova história para continuar sua jornada
+                        pelo cinema.
+                    </p>
+
+                    <div class="actions">
+                        <button>SALVAR</button>
+                        <button class="secondary">VER MAIS</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+       <section class="explore">
+
+    <p class="section-label">EXPLORE</p>
+
+    <h2>E HOJE, VAI DE QUÊ?</h2>
+
+    <p class="explore-text">
+        Escolha uma ou várias opções e deixe o Entreatos encontrar a próxima história.
+    </p>
+
+    <div class="moods">
+        <button>ENGRAÇADO</button>
+        <button>TENSO</button>
+        <button>LEVE</button>
+        <button>ESTRANHO</button>
+        <button>EMOCIONANTE</button>
+        <button>PRA PENSAR</button>
+        <button>ACONCHEGANTE</button>
+        <button>SOMBRIO</button>
+    </div>
+    <button class="discover-button">ENCONTRAR MINHA PRÓXIMA HISTÓRIA</button>
+
+    <div class="discovery-result" id="discoveryResult">
+
+    <p class="section-label">SUA PRÓXIMA HISTÓRIA</p>
+
+    <h3>Encontramos algo para você.</h3>
+
+    <p>
+        Escolhemos uma história com base nas opções que você selecionou.
+    </p>
+
+    <button>VER RECOMENDAÇÃO</button>
+
+</div>
+
+</section>
+
+        <section class="contact-section" id="contato" aria-labelledby="contactTitle">
+            <p class="section-label">FALE COM A GENTE</p>
+            <h2 id="contactTitle">Sua opinião também faz parte da história.</h2>
+            <p class="catalog-intro">Envie uma dúvida, sugestão ou comentário sobre o Entreatos.</p>
+            <form class="contact-form" id="contactForm">
+                <div class="form-field">
+                    <label for="contactName">Seu nome</label>
+                    <input id="contactName" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Como podemos te chamar?">
+                </div>
+                <div class="form-field">
+                    <label for="contactEmail">E-mail</label>
+                    <input id="contactEmail" name="email" type="email" autocomplete="email" required placeholder="voce@email.com">
+                </div>
+                <div class="form-field form-field-full">
+                    <label for="contactMessage">Mensagem</label>
+                    <textarea id="contactMessage" name="message" rows="5" required minlength="10" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+                <button class="contact-submit" type="submit">ENVIAR MENSAGEM</button>
+                <p class="form-feedback" id="contactFeedback" role="status" aria-live="polite"></p>
+            </form>
+            <p class="form-note">Demonstração acadêmica: a mensagem é validada nesta página e não é enviada a um servidor.</p>
+        </section>
+
+    </main>
+
+    <!-- Janela de detalhes: começa escondida e é preenchida pelo JavaScript. -->
+    <div class="details-modal" id="detailsModal" hidden aria-hidden="true">
+        <div class="details-backdrop" data-close-details></div>
+        <section class="details-dialog" role="dialog" aria-modal="true" aria-labelledby="detailsTitle">
+            <button class="details-close" type="button" aria-label="Fechar detalhes" data-close-details>&times;</button>
+            <div class="details-art" id="detailsArt" aria-hidden="true"></div>
+            <div class="details-content">
+                <p class="section-label" id="detailsType"></p>
+                <h2 id="detailsTitle"></h2>
+                <p class="details-meta" id="detailsMeta"></p>
+                <p class="details-description" id="detailsDescription"></p>
+                <button class="favorite-button details-favorite" id="detailsFavorite" type="button"></button>
+            </div>
+        </section>
+    </div>
+
+    <!-- Login demonstrativo: não utiliza servidor nem armazena senhas. -->
+    <div class="account-modal" id="accountModal" hidden aria-hidden="true">
+        <div class="account-backdrop" data-close-account></div>
+        <section class="account-dialog" role="dialog" aria-modal="true" aria-labelledby="accountTitle">
+            <button class="account-close" type="button" aria-label="Fechar janela" data-close-account>&times;</button>
+            <p class="section-label">SUA EXPERIÊNCIA</p>
+            <h2 id="accountTitle">Bem-vindo ao Entreatos.</h2>
+            <p class="account-intro">Entre ou crie um perfil demonstrativo para esta experiência.</p>
+            <div class="account-tabs" role="group" aria-label="Tipo de acesso">
+                <button type="button" class="account-tab active" id="loginTab" aria-pressed="true">Entrar</button>
+                <button type="button" class="account-tab" id="registerTab" aria-pressed="false">Criar conta</button>
+            </div>
+            <form id="accountForm" class="account-form">
+                <div class="form-field" id="accountNameField" hidden>
+                    <label for="accountName">Nome</label>
+                    <input id="accountName" name="name" type="text" autocomplete="name" minlength="2" placeholder="Seu nome">
+                </div>
+                <div class="form-field">
+                    <label for="accountEmail">E-mail</label>
+                    <input id="accountEmail" name="email" type="email" autocomplete="email" required placeholder="voce@email.com">
+                </div>
+                <div class="form-field">
+                    <label for="accountPassword">Senha (somente demonstração)</label>
+                    <input id="accountPassword" name="password" type="password" autocomplete="current-password" required minlength="4" placeholder="Digite uma senha">
+                </div>
+                <button class="contact-submit" type="submit" id="accountSubmit">ENTRAR</button>
+                <p class="form-feedback" id="accountFeedback" role="status" aria-live="polite"></p>
+            </form>
+            <button class="logout-button" type="button" id="accountLogout" hidden>Sair do perfil demonstrativo</button>
+            <p class="form-note">A senha não é salva. Este recurso simula a interface de login e cadastro, sem autenticação real.</p>
+        </section>
+    </div>
+
+    <footer id="perfil">
+        <div class="logo">ENTREATOS</div>
+
+        <p>Uma história leva a outra.</p>
+        <a href="#contato">Contato</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
