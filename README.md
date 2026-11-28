@@ -50,6 +50,17 @@ Entreatos/
 └── images/
     └── posterinterestelar.webp
 ```
+## Etapas de desenvolvimento
+
+O desenvolvimento do Entreatos foi realizado gradualmente, começando pela criação da estrutura básica da página com HTML. Nessa etapa, foram organizadas as principais seções, como apresentação, catálogo e contato.
+
+Em seguida, foi desenvolvido o CSS, responsável pela identidade visual do projeto, incluindo a paleta de cores, os cartões, os botões e a adaptação para diferentes tamanhos de tela.
+
+Com a estrutura e a aparência definidas, foram adicionadas funcionalidades utilizando JavaScript, como pesquisa, filtros, carrossel, favoritos e visualização de detalhes.
+
+Posteriormente, foram implementados recursos de acessibilidade e usabilidade, incluindo alternância de temas, controles de tamanho da fonte, alto contraste e melhorias na navegação pelo teclado.
+
+Por fim, foram realizados testes no navegador para verificar as funcionalidades e corrigir problemas, e o projeto foi publicado por meio do GitHub Pages.
 
 ## Como executar
 
